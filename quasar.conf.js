@@ -21,10 +21,13 @@ module.exports = function (ctx) {
       // 'fontawesome-v5',
       // 'eva-icons'
     ],
-
+    animations: 'all',
     // framework: 'all', // --- includes everything; for dev only!
     framework: {
       components: [
+        'QTimeline',
+        'QTimelineEntry',
+        'QBanner',
         'QLayout',
         'QHeader',
         'QDrawer',
@@ -46,7 +49,8 @@ module.exports = function (ctx) {
         'QList',
         'QItem',
         'QItemSection',
-        'QItemLabel'
+        'QItemLabel',
+        'QVideo'
       ],
 
       directives: [
