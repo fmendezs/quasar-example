@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 
 import principal from './principal'
+import layout2 from './layout2'
 
 Vue.use(Vuex)
 
@@ -13,7 +14,8 @@ Vue.use(Vuex)
 export default function (/* { ssrContext } */) {
   const Store = new Vuex.Store({
     modules: {
-      principal
+      principal,
+      layout2
     }
   })
 
@@ -21,6 +23,11 @@ export default function (/* { ssrContext } */) {
     module.hot.accept(['./principal'], () => {
       const newPrincipal = require('./principal').default
       Store.hotUpdate({ modules: { principal: newPrincipal } })
+    })
+
+    module.hot.accept(['./layout2'], () => {
+      const newLayout2 = require('./layout2').default
+      Store.hotUpdate({ modules: { layout2: newLayout2 } })
     })
   }
 

@@ -50,16 +50,38 @@ module.exports = function (ctx) {
         'QItem',
         'QItemSection',
         'QItemLabel',
-        'QVideo'
+        'QVideo',
+        'QTabs',
+        'QRouteTab',
+        'QChip',
+        'QFooter',
+        'QInput',
+        'QSpace',
+        'QDialog',
+        'QParallax',
+        'QInnerLoading',
+        'QSpinnerGears',
+        'QLinearProgress',
+        'QSpinner',
+        'QSpinnerAudio',
+        'QSpinnerBall',
+        'QSelect',
+        'QTooltip',
+        'QPopupEdit',
+        'QPopupProxy'
       ],
 
       directives: [
-        'Ripple'
+        'Ripple',
+        'CloseDialog',
+        'CloseMenu'
       ],
 
       // Quasar plugins
       plugins: [
-        'Notify'
+        'Notify',
+        'BottomSheet',
+        'Loading'
       ]
 
       // iconSet: 'ionicons-v4'

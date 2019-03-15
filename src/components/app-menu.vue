@@ -78,6 +78,14 @@
           <q-item-label caption>Is a component displays a list of events in chronological order</q-item-label>
         </q-item-section>
       </q-item>
+      <q-item tag="a" to="/parallax">
+        <q-item-section avatar>
+          <q-icon name="timeline" />
+        </q-item-section>
+        <q-item-section>
+          <q-item-label>Parallax</q-item-label>
+        </q-item-section>
+      </q-item>
     </q-list>
   </q-drawer>
 </template>
